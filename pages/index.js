@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from '../components/common/Header'
 
 const IndexPage = () => {
     return (
-        <h1>Hello, world!</h1>
+        <Header />
     )
 }
 
