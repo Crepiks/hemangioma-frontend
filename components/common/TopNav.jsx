@@ -3,18 +3,20 @@ import styled from 'styled-components'
 
 const Wrapper = styled.nav`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 `
 
 const StyledLink = styled.a`
     font-weight: 400;
     color: #AAABAD;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer
 `
 
-const TopNav = () => {
+const TopNav = ({ className }) => {
     return (
-        <Wrapper>
+        <Wrapper className={className}>
             <StyledLink>Home</StyledLink>
             <StyledLink>About</StyledLink>
             <StyledLink>Gallery</StyledLink>
