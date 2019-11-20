@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 const Divider = styled.div`
     height: 18px;
     width: 1px;
-    margin: 0 3px;
+    margin: 0 5px;
     background-color: #AAABAD;
 `
 
