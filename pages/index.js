@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '../components/common/Head'
 import Header from '../components/common/Header'
-import AnimatedBackgroundSection from '../components/index/AnimatedBackgroundSection'
+import IntroSection from '../components/index/IntroSection'
 import '../assets/style/reset.css'
 
 const IndexPage = () => {
@@ -9,7 +9,7 @@ const IndexPage = () => {
         <React.Fragment>
             <Head />
             <Header />
-            <AnimatedBackgroundSection />
+            <IntroSection />
         </React.Fragment>
     )
 }

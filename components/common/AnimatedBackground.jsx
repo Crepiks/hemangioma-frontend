@@ -27,8 +27,8 @@ class AnimatedBackgroundSection extends Component {
     }
     render() {
         return (
-            <Wrapper ref={this.vantaRef}>
-                Foreground content goes here
+            <Wrapper ref={this.vantaRef} className={this.props.className}>
+                {this.props.children}
             </Wrapper>
         )
     }
