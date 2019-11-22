@@ -7,7 +7,7 @@ import logo from '../../assets/images/logo.svg'
 const Wrapper = styled.header`
     width: 100%;
     height: 80px;
-    padding: 0 5vw;
+    padding: 0 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
