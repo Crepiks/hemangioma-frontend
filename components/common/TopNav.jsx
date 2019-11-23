@@ -10,7 +10,7 @@ const Wrapper = styled.nav`
 const StyledLink = styled.a`
     font-weight: 400;
     color: #AAABAD;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     cursor: pointer
 `
 

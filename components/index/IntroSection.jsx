@@ -12,8 +12,9 @@ const Wrapper = styled(AnimatedBackground)`
 const Title = styled.h1`
     margin-bottom: 20px;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 50px;
+    font-weight: 400;
     text-align: center;
 `
 
@@ -28,9 +29,9 @@ const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto Slab', serif;
     color: #ffffff;
     font-size: 15px;
-    font-weight: 700;
     background-color: #47B8FF;
     outline: none;
     border: none;

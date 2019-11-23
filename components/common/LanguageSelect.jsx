@@ -18,7 +18,7 @@ const Language = styled.button`
     outline: none;
     border: none;
     background-color: transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 14px;
     font-weight: 400px;
     color: #AAABAD;
