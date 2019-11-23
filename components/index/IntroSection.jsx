@@ -21,6 +21,8 @@ const Title = styled.h1`
 const Subtitle = styled.h3`
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 `
 
 const Button = styled.button`
@@ -32,6 +34,7 @@ const Button = styled.button`
     font-family: 'Roboto Slab', serif;
     color: #ffffff;
     font-size: 15px;
+    font-weight: 300;
     background-color: #47B8FF;
     outline: none;
     border: none;
