@@ -6,6 +6,7 @@ import SpecializationSection from '../components/index/SpecializationSection'
 import DoctorsSection from '../components/index/DoctorsSection'
 import TechnicsSection from '../components/index/TechnicsSection'
 import ClientSection from '../components/index/ClientSection'
+import PriceListSection from '../components/index/PriceListSection'
 import '../assets/style/reset.css'
 
 const IndexPage = () => {
@@ -18,6 +19,7 @@ const IndexPage = () => {
             <DoctorsSection />
             <TechnicsSection />
             <ClientSection />
+            <PriceListSection />
         </React.Fragment>
     )
 }
