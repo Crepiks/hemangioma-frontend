@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SpecializationCard from './SpecializationCard'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Wrapper = styled.section`
     padding: 50px 0;
@@ -35,7 +36,7 @@ const SpecializationSection = ({ className }) => {
         <Wrapper>
             <Title>Наша специализация</Title>
             <Row>
-                <StyledCard />
+                <StyledCard icon={faCoffee} title='dfvf' text='lorem eig egin dfgdfinbf dgidn ddf ergd rrdf d' />
                 <StyledCard />
                 <StyledCard />
             </Row>
