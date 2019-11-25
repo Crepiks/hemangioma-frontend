@@ -14,7 +14,7 @@ const Title = styled.h2`
     margin-bottom: 50px;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
 `
 
