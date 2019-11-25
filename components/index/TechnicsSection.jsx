@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import technicsImage from '../../assets/images/technics.svg'
 
 const Wrapper = styled.section`
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 `
@@ -29,7 +29,7 @@ const Title = styled.h3`
 
 const Text = styled.p`
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 `
 
 const TechnicsSection = ({ className }) => {
