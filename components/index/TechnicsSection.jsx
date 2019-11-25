@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import doctorsImage from '../../assets/images/doctors.svg'
+import technicsImage from '../../assets/images/technics.svg'
 
 const Wrapper = styled.section`
     padding: 100px 0;
@@ -8,16 +8,16 @@ const Wrapper = styled.section`
     justify-content: center;
 `
 
-const Image = styled.img`
-    height: 50vh;
-    width: 40%;
-`
-
 const Column = styled.div`
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+`
+
+const Image = styled.img`
+    height: 50vh;
+    width: 30%;
 `
 
 const Title = styled.h3`
@@ -32,18 +32,16 @@ const Text = styled.p`
     font-size: 22px;
 `
 
-const DoctorsSection = ({ className }) => {
+const TechnicsSection = ({ className }) => {
     return (
-        <Wrapper className={className}>
-            <Image src={doctorsImage} alt="Врачи" />
+        <Wrapper>
             <Column>
                 <Title>Lorem, ipsum dolor.</Title>
-                <Text>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum, exercitationem necessitatibus optio laborum ab? Perspiciatis placeat magnam minus consequatur?
-                </Text>
+                <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, harum!</Text>
             </Column>
+            <Image src={technicsImage} alt="Компьютерная томография" />
         </Wrapper>
     )
 }
 
-export default DoctorsSection
+export default TechnicsSection
