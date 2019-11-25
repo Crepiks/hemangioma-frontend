@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import SpecializationCard from './SpecializationCard'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faMicrochip, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Wrapper = styled.section`
-    padding: 50px 0;
+    padding: 100px 0;
     width: 70%;
     margin: auto;
     box-sizing: border-box;
@@ -21,6 +21,7 @@ const Title = styled.h2`
 
 const Row = styled.div`
     width: 100%;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -28,17 +29,23 @@ const Row = styled.div`
 
 const StyledCard = styled(SpecializationCard)`
     height: 300px;
-    width: 18vw;
+    width: 300px;
 `
+
 
 const SpecializationSection = ({ className }) => {
     return (
         <Wrapper>
             <Title>Наша специализация</Title>
             <Row>
-                <StyledCard icon={faCoffee} title='dfvf' text='lorem eig egin dfgdfinbf dgidn ddf ergd rrdf d' />
-                <StyledCard />
-                <StyledCard />
+                <StyledCard icon={faMicrochip} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+            </Row>
+            <Row>
+                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
             </Row>
         </Wrapper>
     )
