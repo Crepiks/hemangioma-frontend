@@ -26,11 +26,19 @@ const Title = styled.h3`
     font-family: 'Roboto Slab', serif;
     font-size: 36px;
     font-weight: 400;
+
+    @media all and (max-width: 1000px) {
+        font-size: 30px;
+    }
 `
 
 const Text = styled.p`
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+
+    @media all and (max-width: 1000px) {
+        font-size: 18px;
+    }
 `
 
 const TechnicsSection = ({ className }) => {

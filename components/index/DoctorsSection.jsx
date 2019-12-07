@@ -6,11 +6,23 @@ const Wrapper = styled.section`
     padding: 50px 0;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+
+    @media all and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const Image = styled.img`
+    margin-right: 20px;
     height: 50vh;
     width: 40%;
+
+    @media all and (max-width: 800px) {
+        heigth: 40vh;
+        width: 70%;
+    }
 `
 
 const Column = styled.div`
@@ -18,6 +30,10 @@ const Column = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media all and (max-width: 800px) {
+        width: 80%;
+    }
 `
 
 const Title = styled.h3`
@@ -25,11 +41,28 @@ const Title = styled.h3`
     font-family: 'Roboto Slab', serif;
     font-size: 36px;
     font-weight: 400;
+
+    @media all and (max-width: 1000px) {
+        font-size: 30px;
+    }
+
+    @media all and (max-width: 800px) {
+        margin-top: 40px;
+        text-align: center;
+    }
 `
 
 const Text = styled.p`
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+
+    @media all and (max-width: 1000px) {
+        font-size: 18px;
+    }
+
+    @media all and (max-width: 800px) {
+        text-align: center;
+    }
 `
 
 const DoctorsSection = ({ className }) => {
