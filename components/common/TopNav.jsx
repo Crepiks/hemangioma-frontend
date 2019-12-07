@@ -17,11 +17,10 @@ const StyledLink = styled.a`
 const TopNav = ({ className }) => {
     return (
         <Wrapper className={className}>
-            <StyledLink>Home</StyledLink>
-            <StyledLink>About</StyledLink>
-            <StyledLink>Gallery</StyledLink>
-            <StyledLink>Contact</StyledLink>
-            <StyledLink>Doctors</StyledLink>
+            <StyledLink>Главная</StyledLink>
+            <StyledLink>О нас</StyledLink>
+            <StyledLink>Галерея</StyledLink>
+            <StyledLink>Конакты</StyledLink>
         </Wrapper>
     )
 }

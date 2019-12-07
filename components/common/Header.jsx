@@ -26,7 +26,7 @@ const Image = styled.img`
 `
 
 const Navigation = styled(TopNav)`
-    width: 35vw;
+    width: 30vw;
     margin-left: 80px;
 `
 
