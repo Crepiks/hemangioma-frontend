@@ -38,8 +38,8 @@ const ClientSection = ({ className }) => {
         <Wrapper>
             <Image src={clientImage} alt="Доктор с клиентом" />
             <Column>
-                <Title>Lorem, ipsum.</Title>
-                <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum reprehenderit explicabo ab praesentium inventore?</Text>
+                <Title>Мы заботимся о пациентах</Title>
+                <Text>Наблюдение специалистов за пациентом до полного окончания курса</Text>
             </Column>
         </Wrapper>
     )

@@ -37,9 +37,9 @@ const DoctorsSection = ({ className }) => {
         <Wrapper className={className}>
             <Image src={doctorsImage} alt="Врачи" />
             <Column>
-                <Title>Lorem, ipsum dolor.</Title>
+                <Title>Профессиональные врачи</Title>
                 <Text>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam earum, exercitationem necessitatibus optio laborum ab? Perspiciatis placeat magnam minus consequatur?
+                    Наши специалисты имеют коллосальный опыт работы в лечении сосудистых заболеваний
                 </Text>
             </Column>
         </Wrapper>

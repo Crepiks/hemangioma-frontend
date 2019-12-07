@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SpecializationCard from './SpecializationCard'
-import { faMicrochip, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faCapsules, faDiagnoses, faUserNurse, faHeartbeat, faUserMd, faXRay } from '@fortawesome/free-solid-svg-icons'
 
 const Wrapper = styled.section`
     padding: 100px 0;
@@ -28,7 +28,7 @@ const Row = styled.div`
 `
 
 const StyledCard = styled(SpecializationCard)`
-    height: 300px;
+    height: 350px;
     width: 300px;
 `
 
@@ -38,14 +38,14 @@ const SpecializationSection = ({ className }) => {
         <Wrapper>
             <Title>Наша специализация</Title>
             <Row>
-                <StyledCard icon={faMicrochip} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
-                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
-                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+                <StyledCard icon={faDiagnoses} title='Диагностика' text='Диагностика (клинический осмотр, УЗИ, МРТ, КТ) с возможностью использования наркоза' />
+                <StyledCard icon={faCapsules} title='Медикаментозная терапия' text='Назначение медикаментозной терапии гемангиом (без хирургического вмешательства)' />
+                <StyledCard icon={faHeartbeat} title='Сосудистые мальформации' text='Лечение сосудистых мальформаций внутрисосудистым (нетравматичным) методом' />
             </Row>
             <Row>
-                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
-                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
-                <StyledCard icon={faCoffee} title='Новейшее оборудование' text='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, obcaecati?' />
+                <StyledCard icon={faUserMd} title='Амбулаторная хирургия' text='Амбулаторная хирургия (иссечение доброкачественных образований, в том числе сосудистых)' />
+                <StyledCard icon={faXRay} title='Лазерная медицина' text='Лазерная медицина в лечении различных видов ангиодисплазий, опухолей (родимые пятна, невусы, папиломы, доброкачественные образования)' />
+                <StyledCard icon={faUserNurse} title='Консервативная терапия' text='Наблюдение специалистов за пациентом до полного окончания курса лечения' />
             </Row>
         </Wrapper>
     )

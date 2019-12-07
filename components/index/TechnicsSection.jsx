@@ -18,6 +18,7 @@ const Column = styled.div`
 const Image = styled.img`
     height: 50vh;
     width: 30%;
+    margin-left: 20px;
 `
 
 const Title = styled.h3`
@@ -36,8 +37,8 @@ const TechnicsSection = ({ className }) => {
     return (
         <Wrapper>
             <Column>
-                <Title>Lorem, ipsum dolor.</Title>
-                <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, harum!</Text>
+                <Title>Новейшее оборудование</Title>
+                <Text>Диагностика и лечение сосудистых заболеваний с использованием высокотехнологичных медицинских методов</Text>
             </Column>
             <Image src={technicsImage} alt="Компьютерная томография" />
         </Wrapper>
