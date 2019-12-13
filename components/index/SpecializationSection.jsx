@@ -12,7 +12,6 @@ const Wrapper = styled.section`
 
 const Title = styled.h2`
     width: 100%;
-    margin-bottom: 50px;
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
