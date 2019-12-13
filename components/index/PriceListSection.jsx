@@ -13,9 +13,9 @@ const Title = styled.h2`
     width: 100%;
     margin-bottom: 50px;
     text-align: center;
-    font-family: 'Roboto Slab', serif;
     font-size: 30px;
     font-weight: 400;
+    font-family: 'Roboto Slab', serif;
 `
 
 const Row = styled.div`
@@ -29,13 +29,26 @@ const StyledCard = styled(PriceListCard)`
     height: 400px;
 `
 
+const StyledList = styled.ul`
+    width: 100%;
+`
+
+const StyledListItem = styled.li`
+    margin-bottom: 15px;
+`
+
 const PriceListSection = ({ className }) => {
     return (
         <Wrapper className={className}>
             <Title>Прайс лист</Title>
             <Row>
-                <StyledCard title='Service title' />
-                <StyledCard />
+                <StyledCard title='Консультация специалиста' price={3000}>
+                    <StyledList>
+                        <StyledListItem>Длительность: 30мин</StyledListItem>
+                        <StyledListItem>Консультация с ведущим эндоваскулярным хирургом в Казахстане</StyledListItem>
+                    </StyledList>
+                </StyledCard>
+                <StyledCard></StyledCard>
                 <StyledCard />
             </Row>
         </Wrapper>
