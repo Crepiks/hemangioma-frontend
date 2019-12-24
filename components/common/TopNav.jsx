@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from './Button'
 
 const Wrapper = styled.nav`
     display: flex;
@@ -15,6 +16,10 @@ const StyledLink = styled.a`
     cursor: pointer
 `
 
+const StyledButton = styled(Button)`
+    font-size: 13px;
+`
+
 const TopNav = ({ className }) => {
     return (
         <Wrapper className={className}>
@@ -22,6 +27,7 @@ const TopNav = ({ className }) => {
             <StyledLink>О нас</StyledLink>
             <StyledLink>Галерея</StyledLink>
             <StyledLink>Конакты</StyledLink>
+            <StyledButton>Записаться на прием</StyledButton>
         </Wrapper>
     )
 }
