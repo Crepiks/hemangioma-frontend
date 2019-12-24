@@ -8,8 +8,9 @@ const Wrapper = styled.nav`
 `
 
 const StyledLink = styled.a`
+    font-size: 16px;
     font-weight: 400;
-    color: #AAABAD;
+    color: #924E4E;
     font-family: 'Roboto Slab', serif;
     cursor: pointer
 `

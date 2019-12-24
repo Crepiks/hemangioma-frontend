@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import TopNav from './TopNav'
-import LanguageSelect from './LanguageSelect'
 import logo from '../../assets/images/logo.svg'
 
 const Wrapper = styled.header`
@@ -15,12 +14,6 @@ const Wrapper = styled.header`
     box-sizing: border-box;
 `
 
-const Row = styled.div`
-    height: 100%;
-    display: flex;
-    align-items: center;
-`
-
 const Image = styled.img`
     height: 60%;
 `
@@ -30,17 +23,11 @@ const Navigation = styled(TopNav)`
     margin-left: 80px;
 `
 
-const StyleLanguageSelect = styled(LanguageSelect)`
-`
-
 const Header = () => {
     return (
         <Wrapper>
-            <Row>
-                <Image src={logo} alt="Логотип" />
-                <Navigation />
-            </Row>
-            <StyleLanguageSelect />
+            <Image src={logo} alt="Логотип" />
+            <Navigation />
         </Wrapper>
     )
 }

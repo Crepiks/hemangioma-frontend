@@ -8,6 +8,7 @@ import TechnicsSection from '../components/index/TechnicsSection'
 import ClientSection from '../components/index/ClientSection'
 import PriceListSection from '../components/index/PriceListSection'
 import '../assets/style/reset.css'
+import '../assets/style/main.css'
 
 const IndexPage = () => {
     return (
