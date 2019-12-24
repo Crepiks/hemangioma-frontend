@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Logo from './Logo'
 import TopNav from './TopNav'
-import logo from '../../assets/images/logo.svg'
 
 const Wrapper = styled.header`
     width: 100%;
@@ -14,10 +14,6 @@ const Wrapper = styled.header`
     box-sizing: border-box;
 `
 
-const Image = styled.img`
-    height: 60%;
-`
-
 const Navigation = styled(TopNav)`
     width: 30vw;
     margin-left: 80px;
@@ -26,7 +22,7 @@ const Navigation = styled(TopNav)`
 const Header = () => {
     return (
         <Wrapper>
-            <Image src={logo} alt="Логотип" />
+            <Logo />
             <Navigation />
         </Wrapper>
     )
