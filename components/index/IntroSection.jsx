@@ -5,7 +5,7 @@ import doctor_with_client from '../../assets/images/doctor_with_client.svg'
 
 const Wrapper = styled.section`
     width: 80%;
-    height: 60vh;
+    height: 80vh;
     margin: auto;
     display: flex;
     justify-content: space-between;
