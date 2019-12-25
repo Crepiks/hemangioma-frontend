@@ -13,10 +13,24 @@ const Wrapper = styled.article`
     &:hover {
         border: 1px solid #924E4E;
     }
+
+    @media all and (max-width: 950px) {
+        &:hover {
+            border: 1px solid transparent;
+        }
+    }
 `
 
 const StyledIcon = styled(FontAwesomeIcon)`
     width: 80px;
+
+    @media all and (max-width: 950px) {
+        width: 60px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 45px;
+    }
 `
 
 const Title = styled.h4`
@@ -26,6 +40,14 @@ const Title = styled.h4`
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
+
+    @media all and (max-width: 950px) {
+        font-size: 18px;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 14px;
+    }
 `
 
 const Text = styled.p`
@@ -33,6 +55,14 @@ const Text = styled.p`
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+
+    @media all and (max-width: 950px) {
+        font-size: 14px;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 10px;
+    }
 `
 
 const Card = ({ className, icon, title, text }) => {

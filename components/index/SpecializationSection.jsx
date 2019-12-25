@@ -9,6 +9,10 @@ const Wrapper = styled.section`
     margin: auto;
     box-sizing: border-box;
     color: #924E4E;
+
+    @media all and (max-width: 900px) {
+        width: 90%;
+    }
 `
 
 const Title = styled.h2`
@@ -16,6 +20,24 @@ const Title = styled.h2`
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
+    line-height: 1;
+
+    @media all and (max-width: 1200px) {
+        font-size: 30px;
+    }
+
+    @media all and (max-width: 900px) {
+        font-size: 26px;
+    }
+
+    @media all and (max-width: 800px) {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 22px;
+    }
 `
 
 const Container = styled.div`
@@ -30,6 +52,16 @@ const StyledCard = styled(SpecializationCard)`
     height: 350px;
     width: 300px;
     margin-top: 60px;
+    
+    @media all and (max-width: 950px) {
+        height: 300px;
+        width: 200px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 150px;
+        height: 200px;
+    }
 `
 
 
