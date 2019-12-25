@@ -9,6 +9,10 @@ const Wrapper = styled.div`
 
 const Image = styled.img`
     width: 50px;
+
+    @media all and (max-width: 450px) {
+        width: 40px;
+    }
 `
 
 const Column = styled.div`
@@ -22,6 +26,10 @@ const Name = styled.span`
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     font-weight: bold;
+
+    @media all and (max-width: 450px) {
+        font-size: 18px;
+    }
 `
 
 const Subname = styled.span`

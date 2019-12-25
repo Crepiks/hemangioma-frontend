@@ -15,7 +15,6 @@ const Wrapper = styled.header`
 
 const Navigation = styled(TopNav)`
     width: 35vw;
-    margin-left: 80px;
 
     @media all and (max-width: 1300px) {
         width: 45vw;
