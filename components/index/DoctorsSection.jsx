@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '../common/Button'
 import doctorsImage from '../../assets/images/doctors.svg'
 
 const Wrapper = styled.section`
@@ -37,10 +38,9 @@ const Column = styled.div`
 `
 
 const Title = styled.h3`
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 30px;
 
     @media all and (max-width: 1000px) {
         font-size: 30px;
@@ -65,6 +65,11 @@ const Text = styled.p`
     }
 `
 
+const StyledButton = styled(Button)`
+    width: 200px;
+    margin-top: 20px;
+`
+
 const DoctorsSection = ({ className }) => {
     return (
         <Wrapper className={className}>
@@ -74,6 +79,7 @@ const DoctorsSection = ({ className }) => {
                 <Text>
                     Наши специалисты имеют коллосальный опыт работы в лечении сосудистых заболеваний
                 </Text>
+                <StyledButton>Наши врачи</StyledButton>
             </Column>
         </Wrapper>
     )
