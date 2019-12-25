@@ -12,6 +12,7 @@ const StyledButton = styled.button`
     outline: none;
     border: none;
     color: #ffffff;
+    cursor: pointer;
 `
 
 const Button = ({ className, children }) => (
