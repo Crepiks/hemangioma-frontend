@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '../common/Button'
 import technicsImage from '../../assets/images/technics.svg'
 
 const Wrapper = styled.section`
@@ -18,14 +19,13 @@ const Column = styled.div`
 const Image = styled.img`
     height: 50vh;
     width: 30%;
-    margin-left: 20px;
+    margin-left: 50px;
 `
 
 const Title = styled.h3`
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 30px;
 
     @media all and (max-width: 1000px) {
         font-size: 30px;
@@ -41,12 +41,18 @@ const Text = styled.p`
     }
 `
 
+const StyledButton = styled(Button)`
+    width: 250px;
+    margin-top: 20px;
+`
+
 const TechnicsSection = ({ className }) => {
     return (
-        <Wrapper>
+        <Wrapper className={className}>
             <Column>
                 <Title>Новейшее оборудование</Title>
                 <Text>Диагностика и лечение сосудистых заболеваний с использованием высокотехнологичных медицинских методов</Text>
+                <StyledButton>Как мы работаем</StyledButton>
             </Column>
             <Image src={technicsImage} alt="Компьютерная томография" />
         </Wrapper>
