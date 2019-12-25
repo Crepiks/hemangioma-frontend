@@ -1,58 +1,56 @@
 import React from 'react'
 import styled from 'styled-components'
-import AnimatedBackground from '../common/AnimatedBackground'
+import Button from '../common/Button'
+import doctor_with_client from '../../assets/images/doctor_with_client.svg'
 
-const Wrapper = styled(AnimatedBackground)`
+const Wrapper = styled.section`
+    width: 80%;
+    height: 60vh;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    color: #924E4E;
+    font-family: 'Roboto Slab', sans-serif;
+`
+
+const Column = styled.div`
+    width: 45%;
+    box-sizing: border-box;
 `
 
 const Title = styled.h1`
-    margin-bottom: 5px;
-    color: #ffffff;
-    font-family: 'Roboto Slab', serif;
-    font-size: 55px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 38px;
+    line-height: 1;
 `
 
-const Subtitle = styled.h3`
-    margin-top: 15px;
-    max-width: 60%;
-    color: #ffffff;
-    text-align: center;
+const Subtitle = styled.h2`
+    margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 20px;
 `
 
-const Button = styled.button`
+const StyledButton = styled(Button)`
     margin-top: 30px;
     padding: 15px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Slab', serif;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 300;
-    background-color: #47B8FF;
-    outline: none;
-    border: none;
-    cursor: pointer;
 `
 
-const IntroSection = () => {
-    return (
-        <Wrapper>
-            <Title>Hemangioma.kz</Title>
-            <Subtitle>Центр лечения гемангиомы и других кровеных заболеваний в Казахстане</Subtitle>
-            <Subtitle>Эффективная помощь населению в диагностике и лечении сосудистых заболеваний с использованием высокотехнологичных медицинских методов</Subtitle>
-            <Button>Наши услуги</Button>
-        </Wrapper>
-    )
-}
+const Image = styled.img`
 
-export default IntroSection
+`
+
+const Intro = ({ className }) => (
+    <Wrapper className={className}>
+        <Column>
+            <Title>#1 центр лечения гемангиомы в Казахстане</Title>
+            <Subtitle>Hemangioma.kz - ведущий центр лечения гемангиомы и других кровеных заболеваний в Казахстане</Subtitle>
+            <StyledButton>Наши услуги</StyledButton>
+        </Column>
+        <Column>
+            <Image src={doctor_with_client} alt="Доктор с клиентом" />
+        </Column>
+    </Wrapper>
+)
+
+export default Intro
