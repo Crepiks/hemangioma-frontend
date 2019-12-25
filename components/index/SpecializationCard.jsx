@@ -7,13 +7,16 @@ const Wrapper = styled.article`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 500ms;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid #924E4E;
+    }
 `
 
 const StyledIcon = styled(FontAwesomeIcon)`
     width: 80px;
-    color: #FF6161;
 `
 
 const Title = styled.h4`

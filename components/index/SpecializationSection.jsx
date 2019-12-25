@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import SpecializationCard from './SpecializationCard'
-import { faCoffee, faCapsules, faDiagnoses, faUserNurse, faHeartbeat, faUserMd, faXRay } from '@fortawesome/free-solid-svg-icons'
+import { faCapsules, faDiagnoses, faUserNurse, faHeartbeat, faUserMd, faXRay } from '@fortawesome/free-solid-svg-icons'
 
 const Wrapper = styled.section`
     padding: 100px 0;
     width: 70%;
     margin: auto;
     box-sizing: border-box;
+    color: #924E4E;
 `
 
 const Title = styled.h2`
@@ -15,15 +16,6 @@ const Title = styled.h2`
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
-    font-weight: 400;
-`
-
-const Row = styled.div`
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
 `
 
 const Container = styled.div`
@@ -44,7 +36,7 @@ const StyledCard = styled(SpecializationCard)`
 const SpecializationSection = ({ className }) => {
     return (
         <Wrapper>
-            <Title>Наша специализация</Title>
+            <Title>Мы специализируемся</Title>
             <Container>
                 <StyledCard icon={faDiagnoses} title='Диагностика' text='Диагностика (клинический осмотр, УЗИ, МРТ, КТ) с возможностью использования наркоза' />
                 <StyledCard icon={faCapsules} title='Медикаментозная терапия' text='Назначение медикаментозной терапии гемангиом (без хирургического вмешательства)' />
