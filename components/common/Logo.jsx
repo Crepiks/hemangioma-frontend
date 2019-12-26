@@ -1,19 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../../assets/images/logo.svg'
-
-const Wrapper = styled.div`
-    display: flex;
-    align-items: center;
-`
-
-const Image = styled.img`
-    width: 50px;
-
-    @media all and (max-width: 450px) {
-        width: 40px;
-    }
-`
+import logo_white from '../../assets/images/logo_white.svg'
 
 const Column = styled.div`
     margin-left: 10px;
@@ -22,7 +10,6 @@ const Column = styled.div`
 `
 
 const Name = styled.span`
-    color: #924E4E;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     font-weight: bold;
@@ -33,20 +20,36 @@ const Name = styled.span`
 `
 
 const Subname = styled.span`
-    color: #924E4E;
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     font-weight: bold;
 `
 
-const Logo = ({ className }) => (
-    <Wrapper>
-        <Image src={logo} alt="Логотип" />
-        <Column>
-            <Name>Hemnagioma.kz</Name>
-            <Subname>Основано в 2019</Subname>
-        </Column>
-    </Wrapper>
-)
+const Logo = ({ className, theme }) => {
+
+    const Wrapper = styled.div`
+        display: flex;
+        align-items: center;
+        color: ${theme === 'light' ? '#ffffff' : '#924E4E'};
+    `
+
+    const Image = styled.img`
+        width: 50px;
+
+        @media all and (max-width: 450px) {
+            width: 40px;
+        }
+    `
+
+    return (
+        <Wrapper className={className}>
+            <Image src={theme === 'light' ? logo_white : logo} alt="Логотип" />
+            <Column>
+                <Name>Hemnagioma.kz</Name>
+                <Subname>Основано в 2019</Subname>
+            </Column>
+        </Wrapper>
+    )
+}
 
 export default Logo
