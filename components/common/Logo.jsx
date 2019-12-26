@@ -45,7 +45,7 @@ const Logo = ({ className, theme }) => {
         <Wrapper className={className}>
             <Image src={theme === 'light' ? logo_light : logo} alt="Логотип" />
             <Column>
-                <Name>Hemnagioma.kz</Name>
+                <Name>Hemangioma.kz</Name>
                 <Subname>Основано в 2019</Subname>
             </Column>
         </Wrapper>
