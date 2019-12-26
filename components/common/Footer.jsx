@@ -9,7 +9,7 @@ const Wrapper = styled.footer`
     justify-content: space-between;
     background-color: #924E4E;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #FFE8E8;
 
     @media all and (max-width: 800px) {
         height: auto;
