@@ -2,3 +2,8 @@ body {
     background-color: #FFE8E8;
     color: #924E4E;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
