@@ -17,12 +17,10 @@ const Wrapper = styled.section`
 
 const Image = styled.img`
     margin-right: 20px;
-    height: 50vh;
-    width: 40%;
+    width: 30%;
 
     @media all and (max-width: 800px) {
-        heigth: 40vh;
-        width: 70%;
+        width: 50%;
     }
 `
 
@@ -41,14 +39,23 @@ const Title = styled.h3`
     margin-bottom: 10px;
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
+    line-height: 1;
 
-    @media all and (max-width: 1000px) {
+    @media all and (max-width: 1200px) {
         font-size: 30px;
     }
 
+    @media all and (max-width: 900px) {
+        font-size: 26px;
+    }
+
     @media all and (max-width: 800px) {
-        margin-top: 40px;
+        margin-top: 30px;
         text-align: center;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 22px;
     }
 `
 
@@ -56,8 +63,8 @@ const Text = styled.p`
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 
-    @media all and (max-width: 1000px) {
-        font-size: 18px;
+    @media all and (max-width: 1200px) {
+        font-size: 16px;
     }
 
     @media all and (max-width: 800px) {
@@ -68,6 +75,10 @@ const Text = styled.p`
 const StyledButton = styled(Button)`
     width: 200px;
     margin-top: 20px;
+
+    @media all and (max-width: 800px) {
+        margin: 20px auto 0;
+    }
 `
 
 const DoctorsSection = ({ className }) => {
