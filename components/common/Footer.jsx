@@ -10,11 +10,20 @@ const Wrapper = styled.footer`
     background-color: #924E4E;
     box-sizing: border-box;
     color: #ffffff;
+
+    @media all and (max-width: 800px) {
+        height: auto;
+        flex-direction: column;
+    }
 `
 
 const Column = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media all and (max-width: 800px) {
+        margin-bottom: 30px;
+    }
 `
 
 const StyledLogo = styled(Logo)`
