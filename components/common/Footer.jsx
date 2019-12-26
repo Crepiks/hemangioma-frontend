@@ -16,7 +16,7 @@ const StyledLogo = styled(Logo)`
 
 const Footer = ({ className }) => (
     <Wrapper className={className}>
-        <StyledLogo />
+        <StyledLogo theme="light" />
     </Wrapper>
 )
 
