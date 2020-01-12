@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Logo from './Logo'
 import TopNav from './TopNav'
+import Link from 'next/link'
 
 const Wrapper = styled.header`
     width: 100%;
@@ -28,7 +29,7 @@ const Navigation = styled(TopNav)`
 const Header = () => {
     return (
         <Wrapper>
-            <Logo />
+            <Link href="/"><a><Logo /></a></Link>
             <Navigation />
         </Wrapper>
     )

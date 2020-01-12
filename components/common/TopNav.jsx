@@ -48,10 +48,9 @@ const StyledBurgerIcon = styled(FontAwesomeIcon)`
 const TopNav = ({ className }) => {
     return (
         <Wrapper className={className}>
-            <StyledLink>Главная</StyledLink>
             <StyledLink>О нас</StyledLink>
             <StyledLink>Галерея</StyledLink>
-            <StyledLink>Конакты</StyledLink>
+            <StyledLink>Контакты</StyledLink>
             <StyledButton>Записаться на прием</StyledButton>
             <StyledBurgerIcon icon={faBars} />
         </Wrapper>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from './Logo'
+import Link from 'next/link'
 
 const Wrapper = styled.footer`
     height: 350px;
@@ -37,7 +38,7 @@ const Title = styled.h4`
     font-weight: 400;
 `
 
-const Link = styled.a`
+const StyledLink = styled.a`
     margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
@@ -51,14 +52,13 @@ const Text = styled.span`
 const Footer = ({ className }) => (
     <Wrapper className={className}>
         <Column>
-            <StyledLogo theme="light" />
+            <Link href="/"><a><StyledLogo theme="light" /></a></Link>
         </Column>
         <Column>
             <Title>Ссылки</Title>
-            <Link href="#">Главная</Link>
-            <Link href="#">О нас</Link>
-            <Link href="#">Галерея</Link>
-            <Link href="#">Конакты</Link>
+            <StyledLink href="#">О нас</StyledLink>
+            <StyledLink href="#">Галерея</StyledLink>
+            <StyledLink href="#">Контакты</StyledLink>
         </Column>
         <Column>
             <Title>Контакты</Title>
